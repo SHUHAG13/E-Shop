@@ -1,1 +1,20 @@
-<p>seller-auth works!</p>
+<div class="card mx-auto mt-5" style="max-width: 350px">
+<div class="card-body text-center">
+  <h4 class="card-title mb-4">Seller Sign-Up</h4>
+  <form ngSubmit="onSubmit(sellerSignUp.value)" #sellerSignUp="ngForm" class="form">
+    <div class="mb-3">
+        <input type="text" class="form-control" id="name" name="name" ngModel placeholder="Enter Name" required>
+    </div>
+    <div class="mb-3">
+        <input type="email" class="form-control" id="email" name="email" ngModel placeholder="Enter Email" required>
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" id="password" name="password" ngModel placeholder="Enter Password" required>
+    </div>
+    <div class="mb-3 d-grid">
+        <button type="submit" class="btn btn-primary "  >SignUp</button>
+    </div>
+    
+  </form>
+</div>
+</div>
